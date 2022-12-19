@@ -7,11 +7,11 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-@Entity // 테이블을 의미
+@Entity // 테이블을 의미, JPA가 밑의 데이터를 읽는다
 @Data
 public class Board {
 
-    @Id
+    @Id     // primary key를 의미
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
